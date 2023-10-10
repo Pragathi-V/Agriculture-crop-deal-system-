@@ -1,0 +1,56 @@
+.login-container {
+    height: 100vh;
+    padding: 60px;
+
+   
+  }
+  
+  .login-btn {
+    margin-top: 50px;
+    display: flex;
+    align-self: center;
+  }
+  
+  .field-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 1250px;
+    align-self: center;
+    margin: auto;
+   background-color: rgb(219, 149, 56);
+  }
+  
+  .error-info {
+    color: red;
+    font-weight: 600;
+  }
+  .signup-btn{
+    margin-top: 50px;
+    display:block;
+    align-self: center;
+
+  }
+  .or{
+      display: block;
+      margin-top: 60px;
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+  
+  .form-label{
+    font-style: white;
+  }
+  .heading{
+    font-style: normal;
+    text-emphasis-color: white;
+  }
+  .sbutton{
+    margin-left: 5px;
+    background-color: rgb(176, 180, 251);
+    color: aliceblue;
+    font-size: large;
+    
+  }
+  .new{
+    margin-top: 20px;
+  }

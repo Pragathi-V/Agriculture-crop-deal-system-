@@ -1,13 +1,384 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+img {
+  max-width: 100%;
+}
+
+p {
+  line-height: 1.8;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 20px;
+  background-color: #34532b;
+}
+.d-flex {
+  float: right;
+}
+.header .links {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.showcase {
+  background: url("https://img.freepik.com/premium-vector/tropical-leaves-frame-background-border-green-leaf_316839-3272.jpg?w=740") no-repeat
+    center/cover;
+  height: 80vh;
+  
+}
+
+.showcase .showcase-overlay {
+  /* background-color: rgba(0, 0, 0, 0); */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* height: 950px; */
+  /* text-align: center; */
+  /* color: rgb(255, 235, 235); */
+}
+
+.showcase .showcase-overlay h1 {
+  font-size: 36px;
+  padding-bottom: 20px;
+}
+
+.destinations {
+  padding: 50px;
+  text-align: center;
+}
+
+.destinations h3 {
+  font-size: 30px;
+  padding: 10px;
+  text-align: center;
+  color: rgb(134, 155, 212);
+}
+
+.destinations .grid div {
+  background-color: #161515;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.destinations .grid div img {
+  border-radius: 10px;
+}
+
+.footer {
+  background-color: #34532b;
+  padding: 20px;
+}
+/* 
+.footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer ul li {
+  margin: 0 20px;
+}
+
+.footer ul li button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px 0;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.footer ul li button:hover {
+  background-color: #2c7f86;
+} */
+
+/* Login and SignUp */
+/* .login .form-control {
+  background-color: #616060;
+  display: -moz-inline-stack;
+  height: 520px;
+    width: 45rem;
+    border-radius: 10px;
+    position: absolute;
+    right: 59%;
+    top: 40%;
+    margin-top: 20px;
+   margin-left:  1px; ;
+  
+    padding: 30px 10px  ;
+} */
+.login .form-control {
+  width: 55%;
+  height: 40%;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 15%;
+}
+
+.login .form-control input {
+  margin: 5px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  width: 2px;
+  height: max-content;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.login .form-control button {
+  background-color: #2c7f86;
+  padding: 8px;
+  border: 2px solid #2c7f86;
+  color: #fff;
+  font-family: inherit;
+  border-radius: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 5px;
+  /* margin-left: 75%; */
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+.login .form-control button:hover {
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .showcase {
+    background-position: top;
+  }
+
+  .showcase .showcase-overlay h1 {
+    font-size: 64px;
+  }
+
+  .showcase .showcase-overlay p {
+    font-size: 18px;
+  }
+
+  .destinations .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .destinations .grid div img {
+    height: 150px;
+    width: 300px;
+  }
+
+  /* .footer ul {
+    flex-direction: row;
+    justify-content: space-between;
+  } */
+
+  .login .form-control input {
+    width: 50vw;
+  }
+  #body {
+    margin-left: 55rem;
+  }
+
+  #ip1 {
+    margin-left: 70px;
+    color: #161515;
+  }
+
+  #ip2 {
+    margin-left: 70px;
+  }
+
+  #ip3 {
+    width: 400px;
+    margin-left: 10px;
+  }
+
+  .full {
+    background: url("https://img.freepik.com/premium-vector/fruit-vegetables-background-theme_23-2148505051.jpg?w=1060");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* filter: blur(8px); */
+    /* -webkit-filter: blur(8px); */
+    height: fit-content;
+  }
+  #btnc {
+    color: #0a0a0a;
+    margin-left: 8rem;
+    background-color: #417763;
+    width: 100px;
+    height: 50px;
+  }
+
+  .row.content {
+    height: 100%;
+  }
+
+  /* Set gray background color and 100% height */
+
+  /* On small screens, set height to 'auto' for the grid */
+  @media screen and (max-width: 767px) {
+    .row.content {
+      height: auto;
+    }
+  }
+  .item1 {
+    grid-area: header;
+    height: 5rem;
+    max-width: 89.25%;
+  }
+  .item11 {
+    grid-area: header;
+    height: 5rem;
+    max-width: 100%;
+    align-items: center;
+    /* background-color: rgba(4, 54, 255, 0.8); */
+    background-image: url("https://img.freepik.com/premium-vector/fruit-vegetables-background-theme_23-2148505051.jpg?w=1060");
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    opacity:inherit
+  }
+  .item12 {
+    grid-area: header;
+    height: 5rem;
+    max-width: 100%;
+    align-items: center;
+  }
+  .item2 {
+    grid-area: menu;
+    height: 20rem;
+  }
+  .item21{
+      height: 20rem;
+      align-items: center;
+      grid-area: auto;
+  }
+  .item22{
+    height: 20rem;
+    align-items: center;
+}
+.item23{
+  height: 20rem;
+}
+  .item3 {
+    grid-area: main;
+    height: 12rem;
+  }
+  .item4 {
+    grid-area: right;
+  }
+  .item5 {
+    grid-area: footer;
+    margin-bottom: 0rem;
+  }
+
+  .grid-container1 {
+    display: grid;
+    grid-template-areas:
+      "header header header header header header"
+      "menu main main main main main"
+      "menu main main main main main"
+      "footer footer footer footer footer footer";
+    gap: 5px;
+    background-image: url("https://img.freepik.com/premium-vector/fruit-vegetables-background-theme_23-2148505051.jpg?w=1060");
+    padding: 10px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+  .grid-container2 {
+    display: grid;
+    grid-template-areas:
+      "header header header header header header"
+      "menu main main main main main"
+      "menu main main main main main"
+      "footer footer footer footer footer footer";
+    gap: 5px;
+    /* background-image: url("https://img.freepik.com/premium-vector/fruit-vegetables-background-theme_23-2148505051.jpg?w=1060"); */
+    padding: 10px;
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    height: 80vh;
+    margin-left: 10%;
+    /* margin-top: 20%; */
+  }
+  .grid-container3 {
+    display: grid;
+    grid-template-areas:
+      "header header header header header header"
+      "menu main main main main main"
+      "menu main main main main main"
+      "footer footer footer footer footer footer";
+    gap: 5px;
+    background-image: url("https://img.freepik.com/premium-vector/fruit-vegetables-background-theme_23-2148505051.jpg?w=1060");
+    padding: 10px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 80vh;
+  }
+  .grid-container1 > div {
+    background-color: rgba(246, 247, 251, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    opacity:inherit
+  }
+  .grid-container2 > div {
+    background-color: rgba(246, 247, 251, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    opacity:inherit
+  }
+  .grid-container3 > div {
+    background-color: rgba(246, 247, 251, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    opacity:inherit
+  }
+  .tam {
+    background-image: url("https://img.freepik.com/premium-vector/fruit-vegetables-background-theme_23-2148505051.jpg?w=1060");
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 70px;
+    align-items: center;
+    align-content: center;
+  }
+  .bckc {
+    font-size: 17px;
+    font-family: "calibri";
+    margin-left: 3rem;
+    width: 110px;
+    background-color: #afcbed;
+    color: black;
+    
+  }
 }

@@ -1,0 +1,32 @@
+.footer-container{
+    border : 2px solid black;
+    background-color:#34532b;;
+    text-align: center;
+    height:50px;
+    display: block;
+    bottom:0;
+    position: fixed;
+    width: 100%;
+    /* border: 2px solid black; */
+}
+.details{
+    text-align: center;
+    display: block;
+    color: rgb(255, 255, 255);
+}
+
+.contact{
+    
+    display: block;
+    color: rgb(255, 255, 255);
+}
+.email{
+    text-align:center;
+    display: block;
+    color: rgb(255, 255, 255);
+}
+.add{
+    text-align:right;
+    
+    color:rgb(255, 255, 255);
+}
