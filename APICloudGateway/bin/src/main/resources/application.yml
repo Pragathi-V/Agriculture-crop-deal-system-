@@ -1,0 +1,32 @@
+server:
+  port: 8082
+
+eureka:
+  instance:
+   hostname: localhost
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: PlantNursery-Service
+          uri: http://localhost:8081/
+          predicates:
+            - Path=/plant/**
+       
+        - id: Customer-Service
+          uri: http://localhost:8086/
+          predicates:
+            - Path=/api/v2/**
+            
+        - id: Order-Service
+          uri: http://localhost:8084/
+          predicates:
+            - Path=/api/v3/**
+        
+        - id: Planter-Service
+          uri: http://localhost:8085/
+          predicates:
+            - Path=/planter/**

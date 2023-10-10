@@ -1,0 +1,30 @@
+server:
+  port: 8085
+
+eureka:
+  instance:
+   hostname: localhost
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+       
+        - id: Dealer-Microservice
+          uri: lb://DEALER-MICROSERVICE
+          predicates:
+            - Path=/Dealer/**
+            
+        - id: Crop-Microservice
+          uri: lb://CROP-MICROSERVICE
+          predicates:
+            - Path=/crop/**
+        
+        - id: Farmer-Microservice
+          uri: lb://FARMER-MICROSERVICE
+          predicates:
+            - Path=/farmer/**
+            
+        
